@@ -1,0 +1,11 @@
+{
+  "resourceType": "Practitioner",
+   "active": true,
+    "name": [
+    {
+      "text": [
+        "Albert Einstein"
+      ]
+    }
+  ]
+}

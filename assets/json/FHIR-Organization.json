@@ -1,0 +1,31 @@
+{
+  "resourceType": "Organization",
+  "active": true,
+  "type": [ {
+    "coding": [ {
+      "system": "http://terminology.hl7.org/CodeSystem/organization-type",
+      "code": "prov",
+      "display": "Healthcare Provider"
+    } ]
+  } ],
+  "name": "Oxford Hospital",
+  "telecom": [ {
+    "system": "phone",
+    "value": "911"
+  } ],
+  "address": [ {
+    "text": "21, Washington Street"
+  } ],
+  "contact": [ {
+   "name": {
+      "text": "Victoria"
+    },
+    "telecom": [ {
+      "system": "email",
+      "value": "victoriatjiaa@gmail.com"
+    }, {
+      "system": "phone",
+      "value": "0812345678"
+    } ]
+  } ]
+}

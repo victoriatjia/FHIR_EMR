@@ -1,0 +1,16 @@
+{
+  "resourceType": "Appointment",
+  "status": "booked",
+  "slot": [],
+  "participant": [ {
+	"actor": {
+	  "reference": "Patient/2138343",
+	  "display": "Victoria Tjia"
+	}
+  }, {
+	"actor": {
+	  "reference": "PractitionerRole/2138342",
+	  "display": "Prof. Albert"
+	}
+  } ]
+}

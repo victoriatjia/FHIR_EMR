@@ -1,0 +1,33 @@
+{
+	"resourceType": "Person",
+	"active": "true",
+	"identifier": [ 
+		{
+			"system": "UserID",
+			"value": "victoriatjiaa@gmail.com"
+		}, 
+		{
+			"system": "Password",
+			"value": "MWI0ZjBlOTg1MTk3MTk5OGU3MzIwNzg1NDRjOTZiMzZjM2QwMWNlZGY3Y2FhMzMyMzU5ZDZmMWQ4MzU2NzAxNA=="
+		},
+		{
+			"system": "JobPosition",
+			"value": "Student"
+		},
+		{
+			"system": "Institution",
+			"value": "Tzu Chi University"
+		}
+	],
+	"name": [ {
+		"text": "Victoria Tjia"
+	} ],
+	"telecom": [
+		{
+		  "system": "email",
+		  "value": "victoriatjiaa@gmail.com"
+		}
+	],
+	"gender": "female",
+	"birthDate": "1999-12-25"
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Login</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel='stylesheet' typeof='text/css' media='all' href='../assets/css/style.css' />
+</head>
+<body style="background: #6259ca;">
+	<div class="center">
+		<!-- PAGE-HEADER -->
+		<div class="page-header">
+		<header id="header-brand" class="text-center text-color-white"></header>
+		</div>
+		<!-- END PAGE-HEADER -->
+		
+		<!-- PAGE-BODY -->
+		<div id="page-body" style="display:none;" class="container">
+			<h1 id="page-title" align="center">EMR Login</h1>
+			<form id="loginForm">
+				<div class="row">
+				  <div class="col-35">
+					<label for="Username">Email <font color="red"> *</font></label>
+				  </div>
+				  <div class="col-65">
+					<input type="text" id="Username" required>
+				  </div>
+				</div>
+				<div class="row">
+				  <div class="col-35">
+					<label for="Password">Password <font color="red"> *</font></label>
+				  </div>
+				  <div class="col-65">
+					<input type="password" id="Password" onkeyup="SHA256PWD.value = sha256(this.value);" required>
+				  </div>
+				</div>
+				
+				<div class="row">
+				  <input type="button" value="Submit" id="btnSubmit" onclick="validateData()">
+				</div>
+			</form>
+			<input type="hidden" id="SHA256PWD">
+		
+			<p align="center">
+				<a href="signUp.html" target="_blank" id="linkToSignUpPage">Click here to sign up</a>
+			</p>
+			<div id="contactPerson" align="left" style="margin-top: 30px"></div>
+		</div>
+		<!-- END PAGE-BODY -->
+	</div>
+	<div id="loadingPage" style="display:none;">
+		<div id="overlay" style="display:block;"></div>
+		<div id="loader"></div>
+	</div>
+	
+	<!-- FOOTER -->
+	<!-- <footer class="footer"> -->
+		<!-- <div class="container02"> -->
+			<!-- <div class="row align-items-center flex-row-reverse"> -->
+				<!-- <div class="col-md-12 col-sm-12 text-center"> -->
+					 <!-- Copyright © 2022 <a href="#">Vlix</a>. Designed by <a href="#"> Victoria Tjia </a> All rights reserved -->
+				<!-- </div> -->
+			<!-- </div> -->
+		<!-- </div> -->
+	<!-- </footer> -->
+	<!-- END FOOTER -->
+
+	<script src="../assets/js/general/jquery.min.js"></script>
+	<script src="../assets/js/general/dictionary.js"></script>
+	<script src="../assets/js/general/sha256.js"></script>
+	<script src="../assets/js/general/fieldValidation.js"></script>
+	<script src="../assets/js/general/queryString.js"></script>
+	<script src="../assets/js/general/session.js"></script>
+	<script src="../assets/js/general/setting.js"></script>
+	<script src="../assets/js/general/HTTPRequest.js"></script>
+	<script src="../assets/js/login.js"></script>
+</body>
+</html>

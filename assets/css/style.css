@@ -1,0 +1,248 @@
+body{
+	margin: 0;
+    padding: 0;
+    font-family: 'Libre Franklin', serif;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.6;
+    color: #444;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 300;
+    line-height: 1.1;
+    color: #222;
+    margin: 0;
+}
+
+p {
+    margin: 0 0 10px;
+	display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+a {
+    color: #363940;
+    text-decoration: none;
+    -webkit-transition: 0.1s ease all;
+    -o-transition: 0.1s ease all;
+    transition: 0.1s ease all;
+	background: transparent;
+	cursor: pointer;
+}
+
+input[type=text], input[type=password], input[type=email], input[type=date],select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+  vertical-align:middle;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=button] {
+  background-color: rgba(98,89,202,1);
+  color: white;
+  padding: 12px 20px;
+  margin-top: 6px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=button]:hover {
+  background-color:rgba(98, 89, 202, 0.8)
+}
+
+/* Color */
+.themeColor01, .themeColor01 a{
+	background-color: rgba(98,89,202,1) !important;
+	color: white !important;
+}
+/* END Color */
+
+/* Position */
+.align-items-center {
+    -ms-flex-align: center !important;
+}
+.center {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.text-center {
+    text-align: center!important;
+}
+
+.topright1{
+	position:absolute;
+	top:0;
+	right:10;
+}
+/* END Position */
+
+/* Text color */
+.text-color-white{
+	 color: white;
+}
+/* END Text color */
+
+/* Container */
+.container {
+  border-radius: 5px;
+  background-color: white;
+  padding: 20px;
+}
+
+.col-35 {
+  float: left;
+  width: 35%;
+  margin-top: 6px;
+}
+
+.col-65 {
+  float: left;
+  width: 65%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* END Container */
+
+/*Customize item based on ID name */
+#header-brand {
+	font-size: 2.5rem;
+}
+
+/* END Customize item based on Class name */
+
+
+/* Loader modal */
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 120px;
+  height: 120px;
+  margin: -76px 0 0 -76px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.modal {
+	position: fixed; /* Stay in place */
+	z-index: 3; /* Sit on top */
+	padding-top: 100px; /* Location of the box */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0,0,0); /* Fallback color */
+	background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+/*END Loader modal*/
+
+#overlay {
+  position: fixed; /* Sit on top of the page content */
+  display: none; /* Hidden by default */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.3); /* Black background with opacity */
+  z-index: 1; /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer; /* Add a pointer on hover */
+}
+
+::-webkit-input-placeholder {
+   font-style: italic;
+}
+:-moz-placeholder {
+   font-style: italic;  
+}
+::-moz-placeholder {
+   font-style: italic;  
+}
+:-ms-input-placeholder {  
+   font-style: italic; 
+}
+
+/* END Loader modal */
+
+.footer {
+    background: #fff;
+    border-top: 1px solid #eaedf1;
+    font-size: 0.875rem;
+    padding: 1.25rem 1.25rem;
+	position:absolute;
+	bottom:0;
+	width:100%;
+	height:60px;
+}
+
+.footer .container02 {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+	.col-35, .col-65, input[type=button] {
+		width: 100%;
+		margin-top: 0;
+	}
+  
+	.footer {
+		padding: 1.25rem 0;
+	}
+}

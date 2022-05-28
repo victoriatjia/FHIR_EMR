@@ -1,0 +1,28 @@
+{
+  "resourceType": "PractitionerRole",
+  "identifier": [ {
+    "system": "PractitionerID",
+    "value": "P0001"
+  } ],
+  "active": true,
+  "code": [ {
+    "coding": [ {
+      "system": "http://hl7.org/fhir/R4/valueset-practitioner-role.html",
+      "code": "6868009",
+      "display": "Hospital administrator"
+    } ]
+  } ],
+  "practitioner": {
+    "reference": "Practitioner/2863581",
+    "display": "Albert Einstein"
+  },
+  "organization": {
+    "reference": "Organization/2863475",
+    "display": "Oxford Hospital"
+  },
+  "telecom": [ {
+    "system": "email",
+    "value": "albertEinstein@oxfuni.com",
+    "use": "work"
+  } ]
+}

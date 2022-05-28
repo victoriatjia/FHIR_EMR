@@ -1,0 +1,12 @@
+{
+	"resourceType": "Patient",
+	"active": "true",
+	"name": [ {
+		"text": "Victoria Tjia"
+	} ],
+	"managingOrganization": {
+		"reference": "Organization/2137917"
+	},
+	"gender": "female",
+	"birthDate": "1999-12-25"
+}
